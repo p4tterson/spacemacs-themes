@@ -56,7 +56,8 @@
        (foreground "#c5c8c6")
        ;; (comment "#b0bec5") ;; table-row
        (comment "#707880") ;; table-row
-
+       (lnum "#3b464b")   ;; linum color
+       (power "#5f875f")
        (red "#cc6666") ;; tab-control-hover-tab-close-button
        (orange "#de935f") ;; darker tab-control-dirty-tab-close-butto
        (yellow "#f0c674") ;; tab-control-dirty-tab-close-button
@@ -71,7 +72,7 @@
        (sky "#0c7cd5")
        (orange2 "#ff7809")
        (lavender "#B388FF")
-       (lime "#92ff36")
+       (lime "#B5BE63")
        (darkaqua "26A69A")
        (pink "ffb4bb")) ;; complement tab-control-dirty-tab-close-button
 
@@ -230,7 +231,7 @@
    ;; Emacs interface
    `(cursor ((,class (:background ,orange))))
    `(fringe ((,class (:background ,background))))
-   `(linum ((,class (:background ,background :foreground ,subtle))))
+   `(linum ((,class (:background ,background :foreground ,lnum))))
    `(linum-highlight-face ((,class (:background ,current-line :foreground ,foreground))))
    `(border ((,class (:background ,current-line))))
    `(vertical-border ((,class (:background ,selection
@@ -669,7 +670,7 @@
 
    ;; Spaceline
    `(spaceline-python-venv ((t (:foreground ,yellow))))
-   `(spaceline-evil-normal ((t (:foreground ,foreground :background ,orange :inherit mode-line))))
+   `(spaceline-evil-normal ((t (:foreground ,foreground :background ,power :inherit mode-line))))
    `(spaceline-evil-insert ((t (:foreground ,background :background ,green :inherit mode-line))))
    `(spaceline-evil-visual ((t (:foreground ,foreground :background ,selection :inherit mode-line))))
 
