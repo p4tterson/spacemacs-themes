@@ -74,7 +74,7 @@
        (lavender "#B388FF")
        (lime "#B5BE63")
        (darkaqua "26A69A")
-       (pink "ffb4bb")) ;; complement tab-control-dirty-tab-close-button
+       (pink "e0a3a3")) ;; complement tab-control-dirty-tab-close-button
 
   (custom-theme-set-faces
    'material-sublime
@@ -286,7 +286,7 @@
    `(paren-face-no-match ((,class (:foreground nil :background nil :inherit show-paren-mismatch))))
 
    ;; Parenthesis dimming (parenface)
-   `(paren-face ((,class (:foreground ,comment :background nil))))
+   `(paren-face ((,class (:foreground ,red :background nil))))
 
    `(sh-heredoc ((,class (:foreground nil :inherit font-lock-string-face :weight normal))))
    `(sh-quoted-exec ((,class (:foreground nil :inherit font-lock-preprocessor-face))))
@@ -923,7 +923,7 @@
 (provide-theme 'material-sublime)
 
 ;; Local Variables:
-;; rainbow-mode: f
+;; rainbow-mode: t
 ;; hl-sexp-mode: nil
 ;; End:
 
